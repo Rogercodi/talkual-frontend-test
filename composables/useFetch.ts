@@ -1,7 +1,7 @@
 import { useFetch } from "nuxt/app";
 
 export const fetch = async (id: string, body: Object) => {
-    let result = await useFetch(
+    await useFetch(
         `http://localhost:1337/api/orders/${id}/donate`,
         {
           method: "post",
@@ -13,6 +13,4 @@ export const fetch = async (id: string, body: Object) => {
           },
         }
       );
-
-      return result;
 }

@@ -1,4 +1,4 @@
-import { Strapi4Response } from "@nuxtjs/strapi/dist/runtime/types";
+
 import {
   OrderListResponse,
 } from "~/types";
