@@ -4,6 +4,7 @@ export default () => {
     return () => {
         try {
             logout();
+            localStorage.removeItem('talkual_token')
             router.push('/')
         } catch (e) {
             console.error(e)

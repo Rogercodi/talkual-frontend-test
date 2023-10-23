@@ -7,7 +7,7 @@ export default () => {
         const router = useRouter();
 
         try {
-            await login({ identifier: email.value, password: password.value });
+            await login({ identifier: email.value, password: password.value }).then((data) => localStorage.setItem('talkual_token', data.jwt))
             await router.push('/orders')
         } catch (e) {
             console.error(e)
