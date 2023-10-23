@@ -18,5 +18,7 @@ const orders = ref(data);
   <section class="p-3">
     <h1 class="text-center">Order List</h1>
     <!-- Write rest of the code here -->
+    <FilteredOrdersList />
+    <DonateForm />
   </section>
 </template>
